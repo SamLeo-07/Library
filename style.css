@@ -1,0 +1,91 @@
+body{
+  margin: 0;
+}
+h1, h2{
+  text-align: center;
+}
+.lib{
+  padding: 5%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-flow: row;
+  gap: 1fr;
+  row-gap: 20px;
+}
+#open-popup{
+  background-color: transparent;
+  border: transparent;
+}
+.plus{
+    width: 100px;
+    height: 100px;
+    cursor: -webkit-grab;
+    position: fixed;
+    bottom: 10%;
+    right: 6%;
+}
+.card{
+  display: grid;
+  grid-template-rows: repeat(6, 1fr);
+  grid-template-columns: 100%;
+  height: 220px;
+  width: 160px;
+  background-color: rgb(255, 153, 58);
+  border-radius: 10px;
+  padding: 10px;
+}
+.card p {
+  font-size: 15px;
+}
+.card h1 {
+  font-size: 22px;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.card button{
+  border-radius: 5px;
+}
+.popupOverlay {
+  display: none; /* Hidden by default */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  z-index: 999; /* Places it above other content */
+}
+
+.popup {
+  display: none; /* Hidden by default */
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  padding: 20px;
+  z-index: 1000; /* Places it above the overlay */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.popup button{
+  width: auto;
+  height: 50px;
+  background-color: green;
+
+}
+form{
+  display: grid;
+  grid-template-rows: repeat(5, 1fr) 40px;
+  grid-template-columns: auto;
+  padding: 20px;
+  gap: 10px;
+}
+input{
+  width: 200px;
+  height: 20px;
+}
+#read{
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+}
