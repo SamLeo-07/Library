@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YO</title>
+    <link rel="stylesheet" href="styke.css">
+    </head>
+    <body>
+      <div>
+        <h1>MY LIBRABY</h1>
+      </div>
+      <div class="library">
+        <h2>ADD YOUR BOOK</h2>
+        <div class="lib"></div>
+      </div>
+      <button id="open-popup"><img src="img/plus.svg" class="plus"></button>
+
+      <div class="popupOverlay"></div>
+      <div class="popup">
+        <form action="">
+          <label for="title">Book Title</label>
+            <input type="text" id="title" minlength="2" name="title" required>
+          <label for="author">Author</label>
+            <input type="text" id="author" minlength="2" name="author" required>
+          <label for="pages">No. of Pages</label>
+            <input type="number" id="pages"  name="pages" required>
+            <input type="checkbox" id="read">Have Read?
+            <button type="submit" class="submit">SUBMIT</button>
+            <button class="close">CLOSE</button> 
+        </form>
+
+      </div>
+
+
+        <script src="yo.js"></script>
+       
+
+
+    </body>
+</html>
